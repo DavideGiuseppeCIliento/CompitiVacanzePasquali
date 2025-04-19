@@ -115,3 +115,26 @@ formPariDispari.addEventListener("submit", function (e) {
     return console.log("ecco l'Array dei numeri DISPARI: " + newArray);
   }
 });
+
+// --------------------------ESERCIZIO 5------------------------------------------------
+const arrayDiOggetti = [
+  { name: "Marco", age: 22 },
+  { name: "Anna", age: 24 },
+  { name: "Luca", age: 17 },
+  { name: "Gianni", age: 53 },
+];
+
+// for (let i = 0; i < arrayDiOggetti.length - 1; i++) {
+//   for (let j = 0; j < arrayDiOggetti.length - 1 - i; j++) {
+//     if (arrayDiOggetti[j].age > arrayDiOggetti[j + 1].age) {
+
+//       let temp = arrayDiOggetti[j];
+//       arrayDiOggetti[j] = arrayDiOggetti[j + 1];
+//       arrayDiOggetti[j + 1] = temp;
+//     }
+//   }
+// }
+
+arrayDiOggetti.sort((a, b) => a.age - b.age);
+
+console.log("Array ordinato:", arrayDiOggetti);
