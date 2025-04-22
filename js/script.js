@@ -138,3 +138,51 @@ const arrayDiOggetti = [
 arrayDiOggetti.sort((a, b) => a.age - b.age);
 
 console.log("Array ordinato:", arrayDiOggetti);
+
+// --------------------------SNACK 1 22/04/25 IN CLASSE------------------------------------------------
+
+const cars = [
+  {
+    marca: "Alfa Romeo",
+    modello: "Giulietta",
+    alimentazione: "benzina",
+  },
+  {
+    marca: "FIAT",
+    modello: "Doblò",
+    alimentazione: "diesel",
+  },
+  {
+    marca: "FIAT",
+    modello: "Panda",
+    alimentazione: "benzina",
+  },
+  {
+    marca: "FIAT",
+    modello: "Fiorino",
+    alimentazione: "metano",
+  },
+  {
+    marca: "Ford",
+    modello: "Fiesta",
+    alimentazione: "diesel",
+  },
+  {
+    marca: "Ford",
+    modello: "Ka",
+    alimentazione: "gpl",
+  },
+  {
+    marca: "Smart",
+    modello: "Smart",
+    alimentazione: "elettrico",
+  },
+];
+
+const carBenzina = cars.filter((car) => car.alimentazione === "benzina");
+const carDiesel = cars.filter((car) => car.alimentazione === "diesel");
+const carGreen = cars.filter((car) => car.alimentazione === "metano" || car.alimentazione === "gpl" || car.alimentazione === "elettrico");
+
+console.log("Auto a benzina:", carBenzina);
+console.log("Auto a diesel:", carDiesel);
+console.log("Auto green:", carGreen);
